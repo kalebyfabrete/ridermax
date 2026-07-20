@@ -1,0 +1,82 @@
+{
+  "collections": {
+    "users": {
+      "schema": {
+        "profile": "object",
+        "settings": "object",
+        "activeShift": "object",
+        "initialCash": "number",
+        "expenseLimits": "array",
+        "goals": "array",
+        "shoppingLists": "array"
+      },
+      "subcollections": {
+        "rides": {
+          "schema": {
+            "id": "string",
+            "shiftId": "string",
+            "timestamp": "string",
+            "app": "string",
+            "distance": "number",
+            "earnings": "number",
+            "durationMinutes": "number",
+            "status": "string",
+            "paymentMethod": "string",
+            "tripsCount": "number",
+            "notes": "string"
+          }
+        },
+        "expenses": {
+          "schema": {
+            "id": "string",
+            "amount": "number",
+            "category": "string",
+            "timestamp": "string",
+            "description": "string"
+          }
+        },
+        "privateClients": {
+          "schema": {
+            "id": "string",
+            "name": "string",
+            "phone": "string",
+            "notes": "string"
+          }
+        },
+        "privateRides": {
+          "schema": {
+            "id": "string",
+            "clientId": "string",
+            "date": "string",
+            "time": "string",
+            "origin": "string",
+            "destination": "string",
+            "amount": "number",
+            "notes": "string",
+            "status": "string"
+          }
+        },
+        "refuelings": {
+          "schema": {
+            "id": "string",
+            "amount": "number",
+            "liters": "number",
+            "odometer": "number",
+            "date": "string",
+            "notes": "string"
+          }
+        },
+        "maintenances": {
+          "schema": {
+            "id": "string",
+            "type": "string",
+            "date": "string",
+            "odometer": "number",
+            "amount": "number",
+            "notes": "string"
+          }
+        }
+      }
+    }
+  }
+}
