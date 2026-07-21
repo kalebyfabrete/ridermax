@@ -14,7 +14,7 @@ import { TabId, TabNavigation } from './components/TabNavigation';
 import { DashboardView } from './views/DashboardView';
 import { RidesView } from './views/RidesView';
 import { FinanceView } from './views/FinanceView';
-import { MaisView } from './views/MaisView';
+import { MaisView } from './views/MoreView';
 import { 
   UserProfile, UserSettings, ActiveShift, RideEntity, QuickExpense, 
   ExpenseLimit, GoalEntity, ShoppingListEntity, PrivateClient, 
